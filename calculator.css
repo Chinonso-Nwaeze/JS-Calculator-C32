@@ -2,12 +2,12 @@
 .calculator {
   width: 370px;
   height: 520px;
-  background-color: rgba(224, 230, 238, 0.459);
+  background-color: rgba(75, 129, 199, 0.459);
   margin: 0 auto;
   border-radius: 10px;
   border: 10px solid rgb(211, 201, 201);
 }
-/* The input display styling */
+/* The input display "the claculator display" styling */
 #display {
   width: 345px;
   height: 100px;
@@ -17,25 +17,25 @@
   background-color: white;
   border: 5px solid rgb(238, 226, 226);
   font-size: 40px; /* Set font size here */
-  color: blueviolet;
+  color: rgb(155, 87, 218);
 }
-/* The Number buttons styling */
+/* The Number "buttons" styling */
 
 button {
   width: 70px;
   height: 65px;
   margin: 5px;
-  color: red;
+  color: rgb(233, 24, 24);
   background-color: aqua;
   border: none;
   border-radius: 10px;
   font-size: 25px;
 }
-
+/* The numbers overall button styling  */
 button.colorStyle {
   background-color: gainsboro;
 }
-/* The styling of the buttons grouped by rows */
+/* The styling of the buttons grouped by rows from the firstRow to fifthRow */
 
 .firstRow {
   display: flex;
@@ -61,7 +61,7 @@ button.colorStyle {
   margin-block-start: -75px;
 }
 
-/* The styling of Symbols including the clear button*/
+/* The styling of Symbols "basic math" including the clear button*/
 .clear {
   background-color: rgb(207, 78, 127);
   color: aqua;
@@ -92,6 +92,6 @@ button.colorStyle {
 #plus {
   height: 140px;
   margin-block-start: -100px;
-  background-color: aqua;
+  background-color: rgb(55, 223, 223);
 }
 
