@@ -1,3 +1,4 @@
+/* The styling of the main box */
 .calculator {
   width: 370px;
   height: 520px;
@@ -6,7 +7,7 @@
   border-radius: 10px;
   border: 10px solid rgb(211, 201, 201);
 }
-
+/* The input display styling */
 #display {
   width: 345px;
   height: 100px;
@@ -18,6 +19,7 @@
   font-size: 40px; /* Set font size here */
   color: blueviolet;
 }
+/* The Number buttons styling */
 
 button {
   width: 70px;
@@ -33,6 +35,7 @@ button {
 button.colorStyle {
   background-color: gainsboro;
 }
+/* The styling of the buttons grouped by rows */
 
 .firstRow {
   display: flex;
@@ -58,6 +61,7 @@ button.colorStyle {
   margin-block-start: -75px;
 }
 
+/* The styling of Symbols including the clear button*/
 .clear {
   background-color: rgb(207, 78, 127);
   color: aqua;
