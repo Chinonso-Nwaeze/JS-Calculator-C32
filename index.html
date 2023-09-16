@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript-Calculator</title>
-    <link rel="stylesheet" type="text/css" href="calculator.css" />
-  </head>
-  <body>
-    <div class="calculator">
-      <div class="inputBox">
-        <input class="input" id="display" type="text" disabled />
-      </div>
-      <div class="firstRow">
-        <button class="clear" onclick="clearDisplay()">C</button>
-        <button class="division" onclick="appendToDisplay('/')">/</button>
-      </div>
-      <div class="secondRow">
-        <button class="colorStyle" onclick="appendToDisplay('7')">7</button>
-        <button class="colorStyle" onclick="appendToDisplay('8')">8</button>
-        <button class="colorStyle" onclick="appendToDisplay('9')">9</button>
 
-        <button class="minus" onclick="appendToDisplay('-')">-</button>
-      </div>
-      <div class="thirdRow">
-        <button class="colorStyle" onclick="appendToDisplay('4')">4</button>
-        <button class="colorStyle" onclick="appendToDisplay('5')">5</button>
-        <button class="colorStyle" onclick="appendToDisplay('6')">6</button>
-        <button class="multiply" onclick="appendToDisplay('*')">*</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript-Calculator</title>
+  <link rel="stylesheet" type="text/css" href="calculator.css" />
+</head>
 
-      </div>
-      <div class="fourthRow">
-        <button class="colorStyle" onclick="appendToDisplay('1')">1</button>
-        <button class="colorStyle" onclick="appendToDisplay('2')">2</button>
-        <button class="colorStyle" onclick="appendToDisplay('3')">3</button>   
-      </div>
-      <div class="plus">
-        <button id="plus" onclick="appendToDisplay('+')">+</button>
-      </div>
-
-      <div class="fifthRow">
-        <button class="colorStyle" onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('.')">.</button>
-        <button class="equal" onclick="calculate()">=</button>
-      </div>
+<body>
+  //The calculator container
+  <div class="calculator">
+    //The input box, where the calculation will be displayed
+    <div class="inputBox">
+      <input class="input" id="display" type="text" disabled />
     </div>
-    <script src="calculator.js"></script>
-  </body>
+    //The buttons "Numbers and Symbols"
+    <div class="firstRow">
+      <button class="clear" onclick="clearDisplay()">C</button>
+      <button class="division" onclick="appendToDisplay('/')">/</button>
+    </div>
+    <div class="secondRow">
+      <button class="colorStyle" onclick="appendToDisplay('7')">7</button>
+      <button class="colorStyle" onclick="appendToDisplay('8')">8</button>
+      <button class="colorStyle" onclick="appendToDisplay('9')">9</button>
+
+      <button class="minus" onclick="appendToDisplay('-')">-</button>
+    </div>
+    <div class="thirdRow">
+      <button class="colorStyle" onclick="appendToDisplay('4')">4</button>
+      <button class="colorStyle" onclick="appendToDisplay('5')">5</button>
+      <button class="colorStyle" onclick="appendToDisplay('6')">6</button>
+      <button class="multiply" onclick="appendToDisplay('*')">*</button>
+
+    </div>
+    <div class="fourthRow">
+      <button class="colorStyle" onclick="appendToDisplay('1')">1</button>
+      <button class="colorStyle" onclick="appendToDisplay('2')">2</button>
+      <button class="colorStyle" onclick="appendToDisplay('3')">3</button>
+    </div>
+    <div class="plus">
+      <button id="plus" onclick="appendToDisplay('+')">+</button>
+    </div>
+
+    <div class="fifthRow">
+      <button class="colorStyle" onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button class="equal" onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+
 </html>
